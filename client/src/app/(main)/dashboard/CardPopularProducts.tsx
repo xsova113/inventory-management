@@ -42,7 +42,6 @@ export default function CardPopularProducts() {
                       <span className="mx-2">|</span>
                       <Rating rating={product.rating || 0} />
                     </div>
-                    I
                   </div>
                 </div>
 
