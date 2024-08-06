@@ -32,7 +32,7 @@ export default function Sidebar() {
           isSidebarCollapsed ? "px-5" : "px-8"
         )}
       >
-        <Image src={"/images/logo.png"} alt="logo" width={40} height={40} />
+        <Image src={"https://s3-inventory-management-nextjs.s3.us-east-2.amazonaws.com/logo.png"} alt="logo" width={40} height={40} />
         <h1
           className={cn(
             "font-extrabold text-2xl",

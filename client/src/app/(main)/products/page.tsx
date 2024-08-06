@@ -10,6 +10,7 @@ import Header from "@/components/Header";
 import { Button } from "@mui/material";
 import Rating from "@/components/Rating";
 import CreateProductModal from "./CreateProductModal";
+import Image from "next/image";
 
 type ProductFormData = {
   name: string;
@@ -81,7 +82,13 @@ export default function ProductsPage() {
               className="mx-auto w-full max-w-full rounded-lg border border-gray-200 bg-white p-4 shadow-md"
             >
               <div className="flex flex-col items-center">
-                <div>img</div>
+                <Image
+                  src={`https://s3-inventory-management-nextjs.s3.us-east-2.amazonaws.com/product${Math.floor(Math.random() * 3) + 1}.png`}
+                  alt={product.name}
+                  width={150}
+                  height={150}
+                  className="mb-3 h-36 w-36 rounded-2xl"
+                />
                 <h3 className="text-xl font-bold text-gray-900">
                   {product.name}
                 </h3>

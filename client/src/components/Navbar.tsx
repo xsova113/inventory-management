@@ -64,7 +64,9 @@ export default function Navbar() {
           <div className="flex cursor-pointer items-center gap-3">
             <div className="relative h-10 w-10">
               <Image
-                src={"/images/profile.jpg"}
+                src={
+                  "https://s3-inventory-management-nextjs.s3.us-east-2.amazonaws.com/profile.jpg"
+                }
                 className="rounded-full object-cover"
                 alt="avatar"
                 fill
